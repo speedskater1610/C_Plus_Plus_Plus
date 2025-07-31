@@ -1,0 +1,51 @@
+#include <cstring>
+#include <stdlib.h>
+#include <stdio.h>
+#include "build.h"
+
+void delete_file(const char *fileName) {
+    if (remove(fileName) == 0) {
+        // file was successfully removed
+    } else {
+        perror("Error deleting file -- in build/build.c");
+    }
+}
+
+void build_exe_from_asm(const char *exeFile) { 
+    
+}
+
+
+/*
+    int nasm_result;
+
+    char nasm[512];
+    
+    snprintf(nasm, sizeof(nasm), "nasm -f win64 \"%s\" -o hold.obj", output_file);
+    nasm_result = system(nasm);
+
+    // ERROR handling
+    if (nasm_result != 0) {
+        printf("ERROR - NASM (CRAW - ASM) failed with code %d\n", nasm_result);
+        return;
+    }
+
+
+    char gcc[256];
+    if (!strstr(exeFile, ".exe")) {
+        snprintf(gcc, sizeof(gcc), "gcc -O2 hold.obj -o \"%s.exe\"", exeFile);
+    } else {
+        snprintf(gcc, sizeof(gcc), "gcc -O2 hold.obj -o \"%s\"", exeFile);
+    }
+
+    int gcc_result = system(gcc);
+
+    if (gcc_result != 0) {
+        printf("ERROR - GCC (ASM - BIN) failed with code %d\n", gcc_result);
+        return;
+    }
+
+    delete_file("hold.obj");
+    //period means it ran fine
+    printf("...\n");
+*/
