@@ -1,9 +1,0 @@
-#include <stdcraw>
-
-
-mut str[100] Mname = ("russel" 0);
-//const str[100] Cname = ("robin" 0);
-
-
-println(<Mname>);
-//println(<Cname>);
