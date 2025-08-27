@@ -16,7 +16,7 @@ void trim_newline(char *str) {
 
 
 //what fiule is being acessed and its contenst
-char main_file[100] = "input_output/file.craw";
+char main_file[100] = "input_output/file.cppp";
 char *fileContents;
 // the file being out poutted to and what is being outputted
 char output_file[100] = "input_output/main.asm";
